@@ -9,7 +9,7 @@ public class Checkpoint : MonoBehaviour
         if (collision.CompareTag(ItemTags.PLAYER_TAG))
         {
             isChecked = true;
-            GameManager.instance.CheckFinishRace();
+            ScriptData.gameManager.CheckFinishRace();
 
         }
     }

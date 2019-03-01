@@ -3,8 +3,6 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
-
     [Header("Player Variables")]
     public CarController carController;
     [SerializeField] private Transform playerStartPosition;
@@ -26,7 +24,7 @@ public class GameManager : MonoBehaviour
 
     private float timeCounter = 0f;
     private float bestLapTime = 0f;
-
+   
     private bool raceStarted = false;
 
     public bool RaceStarted
@@ -35,17 +33,14 @@ public class GameManager : MonoBehaviour
         set { raceStarted = value; }
     }
 
-    private void Awake()
-    {
-        instance = this;
-    }
+
 
     private void Start()
     {
         SetupPlayer();
         bestLapTime = PlayerPrefsData.GetTrackRekord(trackNumber);
         bestTimeLabel.text = "Best Time : " + bestLapTime.ToString("F2");
-
+       
     }
 
     private void Update()
@@ -118,5 +113,10 @@ public class GameManager : MonoBehaviour
     {
         carController.transform.position = playerStartPosition.position;
         playerSprite.sprite = teamSprites[PlayerPrefsData.GetSelectedTeam()];
+    }
+
+    public void TransferGameManager()
+    {
+        throw new System.NotImplementedException();
     }
 }

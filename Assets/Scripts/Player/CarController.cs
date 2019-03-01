@@ -37,7 +37,7 @@ public class CarController : MonoBehaviour
 
     private void Movement()
     {
-        if (!GameManager.instance.RaceStarted) return;
+        if (!ScriptData.gameManager.RaceStarted) return;
 
         carRigidBody.velocity = ForwardVelocity() + RightVelocity() * driftFactor;
 

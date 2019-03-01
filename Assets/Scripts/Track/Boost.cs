@@ -16,12 +16,12 @@ public abstract class Boost : MonoBehaviour
 
     protected virtual void ResetSpeed()
     {
-        GameManager.instance.carController.Speed = CarController.maxSpeed;
+        ScriptData.gameManager.carController.Speed = CarController.maxSpeed;
     }
 
     protected virtual void AddBoost()
     {
-        GameManager.instance.carController.Speed = boostSpeed;
+        ScriptData.gameManager.carController.Speed = boostSpeed;
     }
     private IEnumerator StartBoost()
     {
