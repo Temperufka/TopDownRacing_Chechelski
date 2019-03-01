@@ -292,10 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2273065981e2a549a50c93aee102fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamData:
-    selectedTeamID: 1
-    teamName: The Old Path
-    teamImage: {fileID: 21300000, guid: 1471959a6632fa04793a1010f4ef7089, type: 3}
+  teamData: {fileID: 11400000, guid: 1ee3f347f7b3b3f41a91cd0227d9ef30, type: 2}
   teamNameLabel: {fileID: 615018063}
 --- !u!114 &156413746
 MonoBehaviour:
@@ -742,10 +739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2273065981e2a549a50c93aee102fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamData:
-    selectedTeamID: 2
-    teamName: Brush with Breeze
-    teamImage: {fileID: 21300000, guid: b2ad47b1a824abe458a7a359f2ae3ef0, type: 3}
+  teamData: {fileID: 11400000, guid: d707819a1e915ba45bbcc40433f2c5c8, type: 2}
   teamNameLabel: {fileID: 1134817886}
 --- !u!114 &514192237
 MonoBehaviour:
@@ -1515,10 +1509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2273065981e2a549a50c93aee102fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamData:
-    selectedTeamID: 0
-    teamName: Slow Speed Demons
-    teamImage: {fileID: 21300000, guid: 174f90dc4718626429b456cdad2468ef, type: 3}
+  teamData: {fileID: 11400000, guid: af372f3a76c2c7a47ad48c64397e1f05, type: 2}
   teamNameLabel: {fileID: 304972899}
 --- !u!114 &1051434291
 MonoBehaviour:
@@ -1560,7 +1551,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 11400000, guid: 61c3910e788a82d498709f7ba62bdfb2, type: 2}
         m_MethodName: 
         m_Mode: 1
         m_Arguments:

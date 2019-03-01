@@ -23,11 +23,3 @@ public class SelectTeamElement : MonoBehaviour
         GUIController.instance.OpenNextPanel();
     }
 }
-
-[System.Serializable]
-public class TeamData
-{
-    public int selectedTeamID = 0;
-    public string teamName = string.Empty;
-    public Sprite teamImage;
-}
